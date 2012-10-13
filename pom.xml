@@ -8,5 +8,6 @@
   <modules>
   	<module>simple-form-authn</module>
   	<module>shiro-jaxrs-basic-authn</module>
+  	<module>simple-rbac</module>
   </modules>
 </project>

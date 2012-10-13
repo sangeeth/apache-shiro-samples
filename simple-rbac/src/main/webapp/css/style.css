@@ -1,0 +1,74 @@
+body {
+   font-family: Tahoma, Arial, Verdana, Helvetica;
+   font-size: 15px;
+}
+
+table {
+	 border-collapse: collapse;
+	 width: 100%;
+} 
+  
+th {
+   text-transform: uppercase;
+}
+th, td {
+   border: 1px solid #999999;
+   padding: 10px 10px;
+}
+
+td > div {
+   border: 1px dashed blue;
+   padding: 10px;
+   margin: 10px;
+   background-color: #fafafa;
+   overflow: auto;
+}
+
+input {
+	font-size: 15px;
+}
+
+input[type='text'].number {
+   width: 50px;
+}
+
+div.table {
+	display: table;
+}
+
+div.table .table_row {
+    display: table-row;	
+}
+
+div.table_row div{
+	display: table-cell;
+	padding: 5px;
+}
+
+div#container {
+   max-width: 800px;	
+}
+
+div#bar {
+   background-color: #f5f5f5;
+   margin: 5px;
+   padding: 5px;
+   font-size: 1.2em;	
+}
+
+div#messageBar {
+   margin: 5px;
+   padding: 5px;
+}
+
+div#content {
+   padding: 5px;	
+}
+
+.right {
+   float: right;  	
+}
+
+.error {
+   color: #FF0000;
+}
