@@ -101,7 +101,7 @@
 					    <form name="diff" method="post">
 					         <input type="hidden" name="method" value="diff"/>
 					         <input type="text" name="a" value="500"  class="number"/>
-					         + 
+					         - 
 					         <input type="text" name="b" value="300"  class="number"/>
 					         <input type="submit" value="=">
 					         <input type="text" name="result" value="${diff}" readonly="readonly" class="number"/>
