@@ -38,6 +38,7 @@
 			<version>1.2</version>
 		</dependency>
 
+        <!-- Shiro -->
 		<dependency>
 			<groupId>org.apache.shiro</groupId>
 			<artifactId>shiro-core</artifactId>
@@ -71,11 +72,13 @@
 			<version>1.6.4</version>
 		</dependency>
 
+	    <!-- Spring -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
 			<version>3.1.2.RELEASE</version>
 		</dependency>
+		
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-web</artifactId>
@@ -94,6 +97,7 @@
 			<version>2.4</version>
 		</dependency>
 
+        <!-- CGLIB is required for Spring AOP -->
 		<dependency>
 			<groupId>cglib</groupId>
 			<artifactId>cglib</artifactId>

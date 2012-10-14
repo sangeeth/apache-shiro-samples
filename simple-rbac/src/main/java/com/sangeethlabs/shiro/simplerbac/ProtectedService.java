@@ -8,36 +8,17 @@ import java.util.List;
 
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 
-/*
-[users]
-# username = password, roleName1, roleName2, ..., roleNameN
-root = secret, admin
-guest = guest, guest
-gandhi = 12345, role1, role2
-bose = 67890, role2
-
-[roles]
-# rolename = permissionDefinition1, permissionDefinition2, ..., permissionDefinitionN
-# where
-# permissionDefinition => (resource:permissions[:resourceIdentifiers]) | *
-# permissions => (permissionName [,permissionName]*) | *
-# resourceIdentifiers => (resourceIdentifier [,resourceIdentifier]*) | *
-# 'admin' role has all permissions, indicated by the wildcard '*'
-admin = *
-role1 = filesystem:*,system:*
-role2 = "calculator:add,subtract"
-*/
 public class ProtectedService {
 	private static final List<String> USERS = Arrays.asList("root","guest","gandhi","bose");
 	
-	private static final List<String> ROLES = Arrays.asList("admin","guest","role1","role2");
+	private static final List<String> ROLES = Arrays.asList("root","guest","role1","role2");
 	
-	@RequiresPermissions("user-roles:*")
+	@RequiresPermissions("user-roles:read")
 	public List<String> getUsers() {
 		return USERS;
 	}
 	
-	@RequiresPermissions("user-roles:*")
+	@RequiresPermissions("user-roles:read")
 	public List<String> getRoles() {
 		return ROLES;
 	}
